@@ -42,8 +42,6 @@ int main(int argc, char* argv[]) {
 }
 
 void TrendWithNoise(double a, double b, double w) {
-    const double PI = 4.0 * std::atan(1.0);
-
     MovingLinearRegression mlr(100);
 
     for(double x = -100; x < 100.0; x += 0.1) {
