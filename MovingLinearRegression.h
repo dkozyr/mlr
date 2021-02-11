@@ -46,7 +46,7 @@ public:
 
         const auto Sxy = N * sum_xy - sum_x * sum_y;
         const auto Sxx = N * sum_x2 - sum_x * sum_x;
-        if(Sxx == 0.0) {
+        if(std::abs(Sxx) <= std::numeric_limits<double>::epsilon()) {
             return {};
         }
     
