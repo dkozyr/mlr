@@ -4,17 +4,15 @@ Linear regression (2D) is an approach to model 2 variables in form of line:
 
 Sample data:
 
-<img src="https://render.githubusercontent.com/render/math?math=(x_{i},y_{i}),i=1...N = -1">
-
-(x_{i},y_{i}),i=1...N
+<img src="https://render.githubusercontent.com/render/math?math=(x_{i},y_{i}), i=1...N">
 
 Linear model:
 
-<img src="https://render.githubusercontent.com/render/math?math=y%20=%20a%20+%20b\cdot%20x = -1">
-
-y = a + b\cdot x
+<img src="https://render.githubusercontent.com/render/math?math=y = a + b\cdot x">
 
 Liner regression estimates variables a and b to minimize the error:
+
+<img src="https://render.githubusercontent.com/render/math?math=error =\frac{1}{N}  \sum_{i=1}^N(y_{i} - (a + b\cdot x_{i}))^{2}">
 
 error =\frac{1}{N}  \sum_{i=1}^N(y_{i} - (a + b\cdot x_{i}))^{2}
 
