@@ -8,23 +8,23 @@ Sample data:
 
 Linear model:
 
-<img src="https://render.githubusercontent.com/render/math?math=y = a %2B b\cdot x">
+<img src="https://render.githubusercontent.com/render/math?math=y = a %2B b x">
 
 Liner regression estimates variables a and b to minimize the error:
 
-<img src="https://render.githubusercontent.com/render/math?math=error =\frac{1}{N}  \sum_{i=1}^N(y_{i} - (a %2B b\cdot x_{i}))^{2}">
+<img src="https://render.githubusercontent.com/render/math?math=error =\frac{1}{N}  \sum_{i=1}^N(y_{i} - (a %2B b x_{i}))^{2}">
 
 ...
 
 so
 
-b =\frac{S_{xy}}{S_{xx}} = \frac{\sum_{i=1}^N(x_{i} - \overline{X})(y_{i} - \overline{Y})}{\sum_{i=1}^N(x_{i} - \overline{X})^{2}}
-a = \overline{Y}-b \cdot \overline{X}
+<img src="https://render.githubusercontent.com/render/math?math=b =\frac{S_{xy}}{S_{xx}} = \frac{\sum_{i=1}^N(x_{i} - \overline{X})(y_{i} - \overline{Y})}{\sum_{i=1}^N(x_{i} - \overline{X})^{2}}">
+<img src="https://render.githubusercontent.com/render/math?math=a = \overline{Y}-b \overline{X}">
 
 where
 
-\overline{X}=\frac{1}{N} \sum_{i=1}^Nx_{i}
-\overline{Y}=\frac{1}{N} \sum_{i=1}^Ny_{i}
+<img src="https://render.githubusercontent.com/render/math?math=\overline{X}=\frac{1}{N} \sum_{i=1}^Nx_{i}">
+<img src="https://render.githubusercontent.com/render/math?math=\overline{Y}=\frac{1}{N} \sum_{i=1}^Ny_{i}">
 
 Using such formulas is expensive for Moving Linear Regression, so let's do the math:
 
