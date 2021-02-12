@@ -19,7 +19,6 @@ public:
         , _x(ba::tag::rolling_sum::window_size = window_size)
         , _y(ba::tag::rolling_sum::window_size = window_size)
         , _x2(ba::tag::rolling_sum::window_size = window_size)
-        , _y2(ba::tag::rolling_sum::window_size = window_size)
         , _xy(ba::tag::rolling_sum::window_size = window_size)
     {}
 
@@ -27,7 +26,6 @@ public:
         _x(x);
         _y(y);
         _x2(x * x);
-        _y2(y * y);
         _xy(x * y);
         _size = std::min(_size + 1, _window_size);
     }
@@ -41,7 +39,6 @@ public:
         const auto sum_x = ba::rolling_sum(_x);
         const auto sum_y = ba::rolling_sum(_y);
         const auto sum_x2 = ba::rolling_sum(_x2);
-        const auto sum_y2 = ba::rolling_sum(_y2);
         const auto sum_xy = ba::rolling_sum(_xy);
 
         const auto Sxy = N * sum_xy - sum_x * sum_y;
@@ -62,5 +59,5 @@ private:
     const size_t _window_size;
     size_t _size = 0;
 
-    Container _x, _y, _x2, _y2, _xy;
+    Container _x, _y, _x2, _xy;
 };
