@@ -13,9 +13,9 @@ int main(int argc, char* argv[]) {
     po::options_description options("Allowed options");
     options.add_options()
         ("help", "produce help message")
-        ("a", po::value<double>()->default_value(0.0), "")
-        ("b", po::value<double>()->default_value(0.0), "")
-        ("noise", po::value<double>()->default_value(0.0), "")
+        ("a", po::value<double>()->default_value(0.0), "Parameter a. Linear model: y = a + bx")
+        ("b", po::value<double>()->default_value(1.0), "Parameter b. Linear model: y = a + bx")
+        ("w", po::value<double>()->default_value(0.0), "Noise amplitude. Model: y = a + bx + w * sin(kx)")
         ("random", po::bool_switch()->default_value(false), "Use random parameters")
     ;
 
@@ -30,7 +30,7 @@ int main(int argc, char* argv[]) {
 
     double a = vm["a"].as<double>();
     double b = vm["b"].as<double>();
-    double w = vm["noise"].as<double>();
+    double w = vm["w"].as<double>();
     if(vm["random"].as<bool>()) {
         a = Random(-10.0, 10.0);
         b = Random(-2.0, 2.0);
