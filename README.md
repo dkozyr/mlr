@@ -8,13 +8,11 @@ Sample data:
 
 Linear model:
 
-<img src="https://render.githubusercontent.com/render/math?math=y = a + b\cdot x">
+<img src="https://render.githubusercontent.com/render/math?math=y = a %2B b\cdot x">
 
 Liner regression estimates variables a and b to minimize the error:
 
-<img src="https://render.githubusercontent.com/render/math?math=error =\frac{1}{N}  \sum_{i=1}^N(y_{i} - (a + b\cdot x_{i}))^{2}">
-
-error =\frac{1}{N}  \sum_{i=1}^N(y_{i} - (a + b\cdot x_{i}))^{2}
+<img src="https://render.githubusercontent.com/render/math?math=error =\frac{1}{N}  \sum_{i=1}^N(y_{i} - (a %2B b\cdot x_{i}))^{2}">
 
 ...
 
