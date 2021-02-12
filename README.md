@@ -39,7 +39,7 @@ similar for <img src="https://render.githubusercontent.com/render/math?math=S_{x
     <img src="https://render.githubusercontent.com/render/math?math=S_{xx}=\sum x_i^2 -2 \frac{1}{N} \sum x_i\sum x_i %2B \frac{1}{N} \sum x_i\sum x_i">
     <img src="https://render.githubusercontent.com/render/math?math=S_{xx}=\sum x_i^2 -\frac{1}{N} (\sum x_i)^2">
 
-Then multiply <img src="https://render.githubusercontent.com/render/math?math=S_{xxy"> and <img src="https://render.githubusercontent.com/render/math?math=S_{xx}"> by <img src="https://render.githubusercontent.com/render/math?math=N"> we get formulas in form of sums:
+Then multiply <img src="https://render.githubusercontent.com/render/math?math=S_{xy}"> and <img src="https://render.githubusercontent.com/render/math?math=S_{xx}"> by <img src="https://render.githubusercontent.com/render/math?math=N"> we get formulas in form of sums:
 
     <img src="https://render.githubusercontent.com/render/math?math=b=\frac{S_{xy}}{S_{xx}}=
 \frac{N\sum x_{i}  y_{i}-\sum x_{i} \sum y_{i}}{N\sum x_i^2 -(\sum x_i)^2}">
