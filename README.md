@@ -28,17 +28,15 @@ where
 
 Using such formulas is expensive for Moving Linear Regression, so let's do the math:
 
-S_{xy}=\sum_{i=1}^N(x_{i} - \overline{X})(y_{i} - \overline{Y})
-      =\sum_{i=1}^Nx_{i} \cdot y_{i}-\overline{X}\sum_{i=1}^Ny_{i}-\overline{Y}\sum_{i=1}^Nx_{i}+N \overline{X} \overline{Y}
-      =\sum_{i=1}^Nx_{i} \cdot y_{i}-\frac{1}{N} \sum_{i=1}^Nx_{i}\sum_{i=1}^Ny_{i}-\frac{1}{N} \sum_{i=1}^Ny_{i}\sum_{i=1}^Nx_{i}+\frac{1}{N} \sum_{i=1}^Ny_{i}\sum_{i=1}^Nx_{i}
-      =\sum_{i=1}^Nx_{i} \cdot y_{i}-\frac{1}{N} \sum_{i=1}^Nx_{i}\sum_{i=1}^Ny_{i}
+<img src="https://render.githubusercontent.com/render/math?math=S_{xy}=\sum_{i=1}^N(x_{i} - \overline{X})(y_{i} - \overline{Y})">
+<img src="https://render.githubusercontent.com/render/math?math=S_{xy}==\sum_{i=1}^Nx_{i} y_{i}-\overline{X}\sum_{i=1}^Ny_{i}-\overline{Y}\sum_{i=1}^Nx_{i}%2B N \overline{X} \overline{Y}">
+<img src="https://render.githubusercontent.com/render/math?math=S_{xy}==\sum_{i=1}^Nx_{i}  y_{i}-\frac{1}{N} \sum_{i=1}^Nx_{i}\sum_{i=1}^Ny_{i}-\frac{1}{N} \sum_{i=1}^Ny_{i}\sum_{i=1}^Nx_{i} %2B \frac{1}{N} \sum_{i=1}^Ny_{i}\sum_{i=1}^Nx_{i}">
+<img src="https://render.githubusercontent.com/render/math?math=S_{xy}==\sum_{i=1}^Nx_{i}  y_{i}-\frac{1}{N} \sum_{i=1}^Nx_{i}\sum_{i=1}^Ny_{i}">
 
 similar for Sxx:
 
-S_{xx}=\sum_{i=1}^N(x_{i} - \overline{X})^{2}
-      =\sum_{i=1}^N(x_i^2 -2 x_i\overline{X}+\overline{X}^{2})
-      =\sum_{i=1}^Nx_i^2 -2 \overline{X}\sum_{i=1}^Nx_i+N\overline{X}^{2}
-      =\sum_{i=1}^Nx_i^2 -2 \frac{1}{N} \sum_{i=1}^Nx_i\sum_{i=1}^Nx_i+\frac{1}{N} \sum_{i=1}^Nx_i\sum_{i=1}^Nx_i
-      =\sum_{i=1}^Nx_i^2 -\frac{1}{N} \sum_{i=1}^Nx_i\sum_{i=1}^Nx_i
-
-<img src="https://render.githubusercontent.com/render/math?math=e^{i \pi} = -1">
+<img src="https://render.githubusercontent.com/render/math?math=S_{xx}=\sum_{i=1}^N(x_{i} - \overline{X})^{2}">
+<img src="https://render.githubusercontent.com/render/math?math=S_{xx}=\sum_{i=1}^N(x_i^2 -2 x_i\overline{X}+\overline{X}^{2})">
+<img src="https://render.githubusercontent.com/render/math?math=S_{xx}=\sum_{i=1}^Nx_i^2 -2 \overline{X}\sum_{i=1}^Nx_i+N\overline{X}^{2}">
+<img src="https://render.githubusercontent.com/render/math?math=S_{xx}=\sum_{i=1}^Nx_i^2 -2 \frac{1}{N} \sum_{i=1}^Nx_i\sum_{i=1}^Nx_i+\frac{1}{N} \sum_{i=1}^Nx_i\sum_{i=1}^Nx_i">
+<img src="https://render.githubusercontent.com/render/math?math=S_{xx}=\sum_{i=1}^Nx_i^2 -\frac{1}{N} \sum_{i=1}^Nx_i\sum_{i=1}^Nx_i">
