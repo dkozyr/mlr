@@ -1,9 +1,7 @@
-#include <iostream>
-
+#include "../MovingLinearRegression.h"
+#include "../Utils.h"
 #include <boost/program_options.hpp>
-
-#include "MovingLinearRegression.h"
-#include "Utils.h"
+#include <iostream>
 
 void TrendWithNoise(double a, double b, double w);
 
