@@ -4,7 +4,7 @@
 
 class MultipleLinearRegressionTest : public ::testing::Test {
 public:
-    static constexpr auto kEps = 0.001;
+    static constexpr auto kEps = 0.00001;
 
 public:
     MultipleLinearRegressionTest() {
@@ -19,13 +19,13 @@ TEST_F(MultipleLinearRegressionTest, Basic) {
     Eigen::Matrix<float, N, K> X;
 
     X.setRandom();
-    X(0, 0) = 1.0;
 
     Eigen::Matrix<float, K, 1> A;
     A.setRandom();
     A(0, 0) = rand() / static_cast<float>(RAND_MAX);
 
     for(auto r = 0; r < N; ++r) {
+        X(r, 0) = 1.0;
         Y(r, 0) = 0;
         for(auto c = 0; c < K; ++c) {
             Y(r, 0) += A(c, 0) * X(r, c);
